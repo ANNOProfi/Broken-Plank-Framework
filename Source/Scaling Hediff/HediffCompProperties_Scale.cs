@@ -11,5 +11,7 @@ namespace BrokenPlankFramework
         }
 
         public float minimumEfficiency = 1f;
+
+        public StatDef scaleStat;
     }
 }

@@ -7,7 +7,15 @@ namespace BrokenPlankFramework
     {
         public HediffStage stage = new HediffStage();
 
-        protected virtual float ScalingStat => 0;
+        protected virtual float ScalingStat =>pawn.GetStatValue(scaleStat);
+        /*{
+            get
+            {
+                return pawn.GetStatValue(scaleStat);
+            }
+        }*/
+
+        private StatDef scaleStat = null;
 
         private float scalingStatCached = 1f;
 
@@ -46,6 +54,12 @@ namespace BrokenPlankFramework
                 {
                     if (comps[i] is HediffComp_Scale scaleComp)
                     {
+                        if(scaleStat == null)
+                        {
+                            scaleStat = scaleComp.Props.scaleStat;
+                            scalingStatCached = ScalingStat;
+                        }
+
                         curStage = scaleComp.GetStage(curStage, scalingStatCached);
                         pawn.health.capacities.Notify_CapacityLevelsDirty();
                     }
