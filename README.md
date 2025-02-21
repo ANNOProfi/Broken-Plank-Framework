@@ -1,23 +1,21 @@
-# Rimworld Mod Template
+# Broken Plank Framework
 
-This template is created for Rimworld modders who use [Visual Studio Code](https://code.visualstudio.com/) instead of Visual Studio IDE.
+This is the github page for the Broken Plank Framework for RimWorld.
 
-* __No virtual folders__. Easy to manage and edit both `xml` and `cs` files.
+Until the wiki is made, refer to this here text on what is in it and how to use it.
 
-* __Lightweight__. Visual Studio Code only takes up to 200 MB of storage space and is lighting fast.
+## Shield Hediff
+Due to the Athena Framework being on developmental pause, I wanted to protect the functionalities that I use for my mods from potential incompatibilities from furture updates, so I reverse-engineered them here. Both function identically to the original version, so you can refer to the [Athena Framework Wiki][https://github.com/SmArtKar/AthenaFramework/wiki/Shield-Hediffs] on how to use it.
 
-* __Automated__. Integrated build, scripting and management tools to perform common tasks making everyday workflows faster.
+## Singular Ability Hediff
+The same goes for the [singular ability hediffs][https://github.com/SmArtKar/AthenaFramework/wiki/Singular-Hediff-Abilities].
 
-* __Customizable__. Almost every feature can be changed, whenever it is editor UI, keybinds or folder structure.
+## Scaling Hediffs
+This is designed for implants to scale their part efficiency according to other stats of the pawn, like psychic sensitivity.
 
-## Setup
-1. Download and install [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core) and [.Net Framework 4.8 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net48). This step can be skipped if you already have required C# packages from Visual Studio IDE.
-2. Install [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
-3. Clone, pull or download this template into your Rimworld `Mods` folder.
+To use it, you need to do two things:
+1. Change the hediffClass of your implant to BrokenPlankFramework.Hediff_ScalingAddedPart.
+2. Add the HediffComp_Scale comp and add your desired StatDef in the properties.
 
-## Additional notes
-* By pressing `F5` key VS Code will perform 2 operations: build assembly file and launch Rimworld executable. 
-* All intermediate files are kept inside `.vscode` folder.
-* For XML only modders remove preLaunchTask line from `.vscode/launch.json` file.
-* Modify `.vscode/mod.csproj` and `About/About.xml` according to your needs.
- 
+For C# users, you can customize the scaling mechanic by changing the ScalingStat variable in the Hediff_ScalingAddedPart to use whatever multiplier you want to use that is not a regular stat.
+Be sure to set useStat to false in the CompProperties.
