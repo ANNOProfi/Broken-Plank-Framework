@@ -1,4 +1,3 @@
 {
-    "dotnet.defaultSolution": "Source/Source/BrokenPlankFramework.sln",
-    "git.openRepositoryInParentFolders": "never"
+    "dotnet.defaultSolution": "BrokenPlankFramework.sln"
 }

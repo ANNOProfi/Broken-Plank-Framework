@@ -28,9 +28,9 @@
 		</Reference>
 
 		<!-- Harmony -->
-		<!--  <Reference Include="..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\*.dll">
+		<Reference Include="..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\*.dll">
 			<Private>False</Private>
-		</Reference>-->
+		</Reference>
 
 		<!-- Other Files -->
 		<None Include="../../1.5/Defs/**" LinkBase="Defs" />

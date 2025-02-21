@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ANNOP\\Steam\\steamapps\\common\\RimWorld\\Mods\\Broken Plank Framework\\Source\\Source\\BrokenPlankFramework.csproj": {}
+  },
+  "projects": {
+    "D:\\ANNOP\\Steam\\steamapps\\common\\RimWorld\\Mods\\Broken Plank Framework\\Source\\Source\\BrokenPlankFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ANNOP\\Steam\\steamapps\\common\\RimWorld\\Mods\\Broken Plank Framework\\Source\\Source\\BrokenPlankFramework.csproj",
+        "projectName": "BrokenPlankFramework",
+        "projectPath": "D:\\ANNOP\\Steam\\steamapps\\common\\RimWorld\\Mods\\Broken Plank Framework\\Source\\Source\\BrokenPlankFramework.csproj",
+        "packagesPath": "C:\\Users\\ANNOP\\.nuget\\packages\\",
+        "outputPath": "D:\\ANNOP\\Steam\\steamapps\\common\\RimWorld\\Mods\\Broken Plank Framework\\Source\\Source\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\ANNOP\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ANNOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ANNOP\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net480"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net480",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net480",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

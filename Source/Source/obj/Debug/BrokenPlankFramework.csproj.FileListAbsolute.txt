@@ -1,0 +1,7 @@
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\1.5\Assemblies\BrokenPlankFramework.dll
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.csproj.AssemblyReference.cache
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.AssemblyInfoInputs.cache
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.AssemblyInfo.cs
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.csproj.CoreCompileInputs.cache
+D:\ANNOP\Steam\steamapps\common\RimWorld\Mods\Broken Plank Framework\Source\Source\obj\Debug\BrokenPlankFramework.dll
