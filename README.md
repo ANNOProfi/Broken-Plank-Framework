@@ -19,3 +19,6 @@ To use it, you need to do two things:
 
 For C# users, you can customize the scaling mechanic by changing the ScalingStat variable in the Hediff_ScalingAddedPart to use whatever multiplier you want to use that is not a regular stat.
 Be sure to set useStat to false in the CompProperties.
+
+___
+For questions, suggestions and issues, report them here, or on my [discord server](discord.gg/VVNrbGz57T).

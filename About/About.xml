@@ -21,5 +21,5 @@
 		<!-- <li>username.modname</li> -->
 	</incompatibleWith>
 
-	<description>Template</description>
+	<description>A Framework to unify some of the code I use across my mods, as well as things I believe would be useful to others.</description>
 </ModMetaData>
