@@ -1,5 +1,6 @@
-﻿using Verse;
-
+﻿using System.Collections.Generic;
+using Verse;
+using HarmonyLib;
 
 namespace BrokenPlankFramework
 {
@@ -8,8 +9,7 @@ namespace BrokenPlankFramework
     {
         static Start()
         {
-            Log.Message("Broken Plank Framework loaded successfully!");
+            Log.Message("BPF Message: Broken Plank Framework loaded successfully!");
         }
     }
-
 }
