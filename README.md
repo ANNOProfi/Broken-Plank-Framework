@@ -5,10 +5,10 @@ This is the github page for the Broken Plank Framework for RimWorld.
 Until the wiki is made, refer to this here text on what is in it and how to use it.
 
 ## Shield Hediff
-Due to the Athena Framework being on developmental pause, I wanted to protect the functionalities that I use for my mods from potential incompatibilities from furture updates, so I reverse-engineered them here. Both function identically to the original version, so you can refer to the [Athena Framework Wiki][https://github.com/SmArtKar/AthenaFramework/wiki/Shield-Hediffs] on how to use it.
+Due to the Athena Framework being on developmental pause, I wanted to protect the functionalities that I use for my mods from potential incompatibilities from furture updates, so I reverse-engineered them here. Both function identically to the original version, so you can refer to the [Athena Framework Wiki](https://github.com/SmArtKar/AthenaFramework/wiki/Shield-Hediffs) on how to use it.
 
 ## Singular Ability Hediff
-The same goes for the [singular ability hediffs][https://github.com/SmArtKar/AthenaFramework/wiki/Singular-Hediff-Abilities].
+The same goes for the [singular ability hediffs](https://github.com/SmArtKar/AthenaFramework/wiki/Singular-Hediff-Abilities).
 
 ## Scaling Hediffs
 This is designed for implants to scale their part efficiency according to other stats of the pawn, like psychic sensitivity.
