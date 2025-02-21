@@ -7,7 +7,7 @@ namespace BrokenPlankFramework
     {
         public HediffStage stage = new HediffStage();
 
-        protected virtual float ScalingStat =>pawn.GetStatValue(scaleStat);
+        protected virtual float ScalingStat => pawn.GetStatValue(scaleStat);
         /*{
             get
             {
@@ -57,6 +57,10 @@ namespace BrokenPlankFramework
                         if(scaleStat == null)
                         {
                             scaleStat = scaleComp.Props.scaleStat;
+                            if(scaleStat == null && scaleComp.Props.useStat)
+                            {
+                                Log.Error("BPF Error: No valid scaling stat for "+ def.defName +" on pawn "+pawn.Name);
+                            }
                             scalingStatCached = ScalingStat;
                         }
 
