@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>BPF_TestShot</defName>
+        <hediffClass>BrokenPlankFramework.Hediff_ReactiveAbility</hediffClass>
+        <label>test shot</label>
+        <labelNoun>a hell cannon</labelNoun>
+        <description>An installed hell cannon.</description>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>BPF_TestShot</abilityDef> 
+            </li>
+        </comps>
+    </HediffDef>
+
+    <AbilityDef>
+        <defName>BPF_TestShot</defName>
+        <label>test shot</label>
+        <description>Infernal mechanites fuel the firing mechanisms of the hell cannon, producing a highly explosive plasma shot.</description>
+        <cooldownTicksRange>10</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <showWhenDrafted>false</showWhenDrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>15</range>
+            <soundCast>InfernoCannon_Fire</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+            <forcedMissRadius>1</forcedMissRadius>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityLaunchProjectile">
+                <projectileDef>Bullet_InfernoCannon</projectileDef>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>
