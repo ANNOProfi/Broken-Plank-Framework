@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>BPF_Spawner</defName>
+        <label>spawner</label>
+        <description>A place for crafting simple items like knives or bows. Production here is slow because of the lack of tools.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>BrokenPlankFramework/Things/Dev/Spawner/DevSpawner</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
+        <designationCategory>BPF_Dev</designationCategory>
+        <uiOrder>2000</uiOrder>
+        <passability>Standable</passability>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <sowTag>SupportPlantsOnly</sowTag>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <buildingTags>
+                <li>Misc</li>
+            </buildingTags>
+        </building>
+        <comps>
+            <li Class="BrokenPlankFramework.CompProperties_PawnSpawner">
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+</Defs>
