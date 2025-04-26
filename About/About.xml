@@ -17,9 +17,17 @@
 		</li>
 	</modDependencies>
 
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>ludeon.rimworld.core</li>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ludeon.rimworld.ideology</li>
+		<li>ludeon.rimworld.biotech</li>
+	</loadAfter>
+
 	<incompatibleWith>
 		<!-- <li>username.modname</li> -->
 	</incompatibleWith>
 
-	<description>A Framework to unify some of the code I use across my mods, as well as things I believe would be useful to others.</description>
+	<description>A framework to unify some of the code I use across my mods, as well as things I believe would be useful to others.</description>
 </ModMetaData>

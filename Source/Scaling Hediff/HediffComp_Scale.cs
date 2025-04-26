@@ -19,7 +19,7 @@ namespace BrokenPlankFramework
             partEfficiencyCached = Def.addedPartProps.partEfficiency;
         }
 
-        public HediffStage GetStage(HediffStage stage, float scalingStat)
+        public virtual HediffStage GetStage(HediffStage stage, float scalingStat)
         {
             stage.partEfficiencyOffset = partEfficiencyCached * scalingStat - partEfficiencyCached;
 

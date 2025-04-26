@@ -4,14 +4,12 @@ using Verse;
 
 namespace BrokenPlankFramework
 {
-    public class HediffComp_GiveSingularAbility : HediffComp
+    public class HediffComp_GiveSingularAbility : HediffComp_GiveAbility
     {
-        private HediffCompProperties_GiveSingularAbility Props => props as HediffCompProperties_GiveSingularAbility;
+        public HediffCompProperties_GiveSingularAbility Props => props as HediffCompProperties_GiveSingularAbility;
 
         public override void CompPostPostAdd(DamageInfo? dinfo)
         {
-            base.CompPostPostAdd(dinfo);
-
             for (int i = Props.abilityDefs.Count - 1; i >= 0; i--)
             {
                 Ability ability = parent.pawn.abilities.GetAbility(Props.abilityDefs[i]);
@@ -36,8 +34,6 @@ namespace BrokenPlankFramework
 
         public override void CompPostPostRemoved()
         {
-            base.CompPostPostRemoved();
-
             for (int i = 0; i < Props.abilityDefs.Count; i++)
             {
                 Ability ability = parent.pawn.abilities.GetAbility(Props.abilityDefs[i]);

@@ -8,7 +8,7 @@ namespace BrokenPlankFramework
 
     public class HediffComp_Renderable : HediffComp, IRenderable
     {
-        private HediffCompProperties_Renderable Props => props as HediffCompProperties_Renderable;
+        public HediffCompProperties_Renderable Props => props as HediffCompProperties_Renderable;
 
         public virtual void DrawAt(Vector3 drawPos, BodyTypeDef bodyType)
         {

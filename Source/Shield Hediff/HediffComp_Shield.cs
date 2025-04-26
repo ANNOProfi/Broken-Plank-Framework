@@ -16,7 +16,7 @@ namespace BrokenPlankFramework
         public bool freeRecharge = false; // Set to true in case you want your shield's next reboot to give it full energy
         public Vector3 impactAngleVect;
 
-        private HediffCompProperties_Shield Props => props as HediffCompProperties_Shield;
+        public new HediffCompProperties_Shield Props => props as HediffCompProperties_Shield;
 
         public Matrix4x4 matrix;
         public Gizmo_HediffShieldStatus gizmo;
