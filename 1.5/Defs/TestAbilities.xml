@@ -12,6 +12,11 @@
                 <abilityDef>BPF_TestShot</abilityDef> 
             </li>
         </comps>
+        <modExtensions>
+            <li Class="BrokenPlankFramework.Hediff_ReactiveAbility_MinimumHealthExtension">
+                <minimumHealth>0.5</minimumHealth>
+            </li>
+        </modExtensions>
     </HediffDef>
 
     <AbilityDef>

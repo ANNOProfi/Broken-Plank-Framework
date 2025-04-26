@@ -13,10 +13,13 @@ namespace BrokenPlankFramework
 
         public List<Ability> Abilities => abilities;
 
+        private Hediff_ReactiveAbility_MinimumHealthExtension minimumHealthExtension;
+
         public override void PostAdd(DamageInfo? dinfo)
         {
             base.PostAdd(dinfo);
             PopulateList();
+            minimumHealthExtension = def.GetModExtension<Hediff_ReactiveAbility_MinimumHealthExtension>();
             //Log.Message("BPF Message: Abilities populated: "+abilities.ToString());
         }
 
@@ -75,32 +78,35 @@ namespace BrokenPlankFramework
         
         public override void Notify_PawnPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
-            //Log.Message("BPF Message: Damage recieved");
-            foreach(Ability ability in abilities)
+            if(minimumHealthExtension != null && pawn.health.summaryHealth.SummaryHealthPercent <= minimumHealthExtension.minimumHealth)
             {
-                //Log.Message("BPF Message: Checking for cast");
-                if(!pawn.stances.stunner.Stunned && ability.CanCast && dinfo.Instigator.Position.DistanceTo(pawn.Position) <= ability.verb.verbProps.range)
+                //Log.Message("BPF Message: Damage recieved");
+                foreach(Ability ability in abilities)
                 {
-                    //Log.Message("BPF Message: Casting ability");
-                    if(ability.verb.verbProps.soundCast != null)
+                    //Log.Message("BPF Message: Checking for cast");
+                    if(!pawn.stances.stunner.Stunned && ability.CanCast && dinfo.Instigator.Position.DistanceTo(pawn.Position) <= ability.verb.verbProps.range)
                     {
-                        ability.verb.verbProps.soundCast.PlayOneShot(new TargetInfo(pawn.Position, pawn.MapHeld));
-                    }
-                    if(ability.verb.verbProps.soundCastTail != null)
-                    {
-                        ability.verb.verbProps.soundCastTail.PlayOneShotOnCamera(pawn.Map);
-                    }
+                        //Log.Message("BPF Message: Casting ability");
+                        if(ability.verb.verbProps.soundCast != null)
+                        {
+                            ability.verb.verbProps.soundCast.PlayOneShot(new TargetInfo(pawn.Position, pawn.MapHeld));
+                        }
+                        if(ability.verb.verbProps.soundCastTail != null)
+                        {
+                            ability.verb.verbProps.soundCastTail.PlayOneShotOnCamera(pawn.Map);
+                        }
 
-                    int maxExclusive = GenRadial.NumCellsInRadius(ability.verb.verbProps.ForcedMissRadius);
-		            int num = Rand.Range(0, maxExclusive);
+                        int maxExclusive = GenRadial.NumCellsInRadius(ability.verb.verbProps.ForcedMissRadius);
+                        int num = Rand.Range(0, maxExclusive);
 
-                    if(num == 0)
-                    { 
-                        ability.Activate(new LocalTargetInfo(dinfo.Instigator), null);
-                    }
-                    else
-                    {
-                        ability.Activate(new LocalTargetInfo(dinfo.Instigator.Position + GenRadial.RadialPattern[num]), null);
+                        if(num == 0)
+                        { 
+                            ability.Activate(new LocalTargetInfo(dinfo.Instigator), null);
+                        }
+                        else
+                        {
+                            ability.Activate(new LocalTargetInfo(dinfo.Instigator.Position + GenRadial.RadialPattern[num]), null);
+                        }
                     }
                 }
             }
