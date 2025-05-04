@@ -9,7 +9,8 @@ namespace BrokenPlankFramework
 {
     public class Comp_PawnSpawner : ThingComp
     {
-        public CompProperties_PawnSpawner Props => (CompProperties_PawnSpawner)props; 
+        public CompProperties_PawnSpawner Props => (CompProperties_PawnSpawner)props;
+         
         private readonly GameComponent_SortDefs component = Current.Game.GetComponent<GameComponent_SortDefs>();
 
         public List<Faction> Factions => component.factions;
@@ -28,7 +29,7 @@ namespace BrokenPlankFramework
 
         public override void PostPostMake()
         {
-            Log.Message("BPF Message: Spawner comp generated");
+            //Log.Message("BPF Message: Spawner comp generated");
 
             selectedFaction = (Faction)Factions.FirstOrDefault(f => f.def == Props.faction);
 

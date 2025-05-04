@@ -3,7 +3,14 @@
   <Excluded>
     <exclude>.git</exclude>
     <exclude>.vscode</exclude>
+    <exclude>1.5\Defs\DesignationCategory_Dev.xml</exclude>
+    <exclude>1.5\Defs\Race_Dummy.xml</exclude>
+    <exclude>1.5\Defs\Spawner.xml</exclude>
+    <exclude>1.5\Defs\TestAbilities.xml</exclude>
+    <exclude>1.5\Languages</exclude>
+    <exclude>1.5\Patches</exclude>
     <exclude>README.md</exclude>
     <exclude>Source</exclude>
+    <exclude>Textures</exclude>
   </Excluded>
 </Configuration>
